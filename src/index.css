@@ -1,5 +1,40 @@
 @import "tailwindcss";
 
+
+.font-aladin {
+  font-family: "Aladin", cursive;
+}
+
+.font-comfortaa {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+*::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
+}
+

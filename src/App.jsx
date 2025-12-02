@@ -12,7 +12,8 @@ const App = () => {
     return saved ? JSON.parse(saved) : [];
   });
 
-  // Save notes on every update
+  // Save notes on every update 
+  
   useEffect(() => {
     localStorage.setItem("notes", JSON.stringify(task));
   }, [task]);

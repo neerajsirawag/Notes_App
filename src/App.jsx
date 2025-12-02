@@ -140,7 +140,7 @@ const App = () => {
             <div className="flex gap-3 font-bold text-[16px]">
               <button
                 type="submit"
-                className="bg-white text-black px-4 py-2 rounded-lg hover:shadow-[0_0_5px_#fff] transition active:scale-95 w-2/3"
+                className=" bg-black text-white dark:bg-white dark:text-black px-4 py-2 rounded-lg hover:shadow-[0_0_5px_#fff] transition active:scale-95 w-2/3"
               >
                 Add
               </button>
@@ -162,7 +162,7 @@ const App = () => {
             <h2 className="text-2xl font-semibold mb-3">Recent Notes</h2>
 
             {task.length === 0 ? (
-              <div className="p-6 rounded-lg bg-white dark:bg-black/50">
+              <div className="p-6 rounded-lg bg-gray-200 dark:bg-black/50">
                 <p className="text-gray-600 dark:text-gray-300">No notes yet — add one to get started ✏️</p>
               </div>
             ) : (
@@ -170,7 +170,7 @@ const App = () => {
                 {task.map((t, idx) => (
                   <article
                     key={idx}
-                    className="p-4 rounded-xl bg-amber-100 dark:bg-white/5 text-black dark:text-white shadow"
+                    className="p-4 rounded-xl bg-gray-100 dark:bg-white/5 text-black dark:text-white shadow"
                   >
                     <h3 className="font-semibold text-lg break-all">{t.title || 'Untitled'}</h3>
                     <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 break-all">{t.note}</p>
@@ -200,7 +200,7 @@ const App = () => {
       </main>
 
 
-      <footer className="w-full py-4 mt-10 text-center text-gray-200 border-t border-gray-700">
+      <footer className="w-full py-4 mt-10 text-center dark:text-gray-200 border-t border-gray-700">
         <p className="">
           Created with ❤️ by{" "}
           <a 
